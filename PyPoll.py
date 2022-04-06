@@ -24,6 +24,11 @@ total_votes = 0
 candidate_options = []
 candidate_votes = dict()
 
+#Winning Candidate and Winning Count Tracker
+winning_candidate = ""
+winning_count = 0
+winning_percentage = 0
+
 with open(file_to_load) as election_data:
 
     # To do: perform analaysis.
@@ -50,19 +55,54 @@ with open(file_to_load) as election_data:
 
 # Determine the percentage of votes for each candidate by looping through the counts. -module way
 # 1. Iterate through the candidate list.
-# for candidate_name in candidate_votes:
-#     # 2. Retrieve vote count of a candidate.
-#     votes = candidate_votes[candidate_name]
-#     # 3. Calculate the percentage of votes.
-#     vote_percentage = float(votes) / float(total_votes) * 100
-#     # 4. Print the candidate name and percentage of votes.
-#     print(f"{candidate_name}: received {vote_percentage}% of the vote.")
+    for candidate_name in candidate_votes:
+        # 2. Retrieve vote count of a candidate.
+        votes = candidate_votes[candidate_name]
+        # 3. Calculate the percentage of votes.
+        vote_percentage = float(votes) / float(total_votes) * 100
+        # 4. Print the candidate name and percentage of votes.
+        print(f"{candidate_name}: {vote_percentage:.2f}% ({votes:,}).\n")
 
 #-my way
-for k, v in candidate_votes.items():
-    vote_percentage = v/total_votes*100
-    print(f"Candidate {k} had {v:,} number of votes and {vote_percentage:.2f}% of the total votes")
-print(f"Total number of votes were: {total_votes:,}")
+    # for k, v in candidate_votes.items():
+    # vote_percentage = v/total_votes*100
+    # print(f"Candidate {k} had {v:,} number of votes and {vote_percentage:.2f}% of the total votes")
+    # print(f"Total number of votes were: {total_votes:,}")
+
+    #     Next, we will create an if statement inside the for loop and do the following:
+
+    # Determine if the vote count that was calculated is greater than the winning_count.
+    # If the vote count is greater than the winning_count and the percentage is greater than the winning_percentage, set the winning_count equal to the votes and set the winning_percentage equal to the vote_percentage.
+    # Set the winning_count equal to the variable, candidate_name, in the for loop.
+    
+    #Determine winning vote count and candidate
+    #1. Determine if the votes are greater than the winning count.
+        if (votes > winning_count) and (vote_percentage > winning_percentage):
+            #2. If true, then set winning_count = votes and winning_percentage = vote percentage
+            winning_count = votes
+            winning_percentage = vote_percentage
+            #3. Set the winning_candidate equal to the candidate's name.
+            winning_candidate = candidate_name
+
+
+    winning_candidate_summary = (f"""
+        ---------------------------------
+        And the winner is!..... {winning_candidate}
+        Winning Vote Count: {winning_count:,} 
+        Winning Percentage: {winning_percentage:.2f}% 
+        ---------------------------------
+        """)
+    print(winning_candidate_summary)
+        
+#Use if to check if first vote count for candidate is greater than zero
+#If true, then vote counte will be equal to "winning count"
+#candidates percentage of vote equal to "winning percentage"
+#then select candidate as "winning candidate from candidate_options list
+
+#Delcare a variable that holds an empty string value for the winning candidate
+#Declare a variable for the "winning count" equal to zero
+#Declare a variable for the "winning percentage" equal to zero
+#All before "With statement" opening
 
 #     print(election_data)
 # Close the file.
@@ -88,3 +128,5 @@ print(f"Total number of votes were: {total_votes:,}")
 #     outfile.write("Arapahoe\nDenver\nJefferson\n")
 # #Close the file
 # # outfile.close()
+
+
