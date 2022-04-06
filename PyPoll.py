@@ -102,7 +102,7 @@ Total Votes: {total_votes:,}
 
     winning_candidate_summary = (f"""
 ---------------------------------
-And the winner is!..... {winning_candidate}
+Winner: {winning_candidate}
 Winning Vote Count: {winning_count:,} 
 Winning Percentage: {winning_percentage:.2f}% 
 ---------------------------------
