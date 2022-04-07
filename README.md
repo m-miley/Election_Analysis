@@ -17,15 +17,15 @@ A Colorado Board of Elections employee tasked me with the following activities t
 Conclusive results are as follows:
 1. Total votes cast:  369,711 
 2. Candidates:
-   -Charles Casper
-   -Diana DeGette
-   -Raymon Anthony Doane
+      - Charles Casper
+      - Diana DeGette
+      - Raymon Anthony Doane
 3. Candidate Results:
-   -Charles Casper received 85,213 votes at 23.05% of total votes.
-   -Diana DeGette received 272,892 votes at 73.81% of total votes.
-   -Raymon Anthony Doane received 11,606 votes at 3.14% of total votes.
+      - Charles Casper received 85,213 votes at 23.05% of total votes.
+      - Diana DeGette received 272,892 votes at 73.81% of total votes.
+      - Raymon Anthony Doane received 11,606 votes at 3.14% of total votes.
 4. The winner of the election was:
-   -Diana DeGette who received 272,892 votes at 73.81% of total votes.
+      - Diana DeGette who received 272,892 votes at 73.81% of total votes.
 
 ## Challenge Overview
 
