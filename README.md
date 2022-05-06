@@ -21,7 +21,7 @@ Conclusive results are as follows:
       - Charles Casper
       - Diana DeGette
       - Raymon Anthony Doane
-3&4. Candidate Results:
+3. Candidate Results:
       - Charles Casper received 85,213 votes at 23.05% of total votes.
       - Diana DeGette received 272,892 votes at 73.81% of total votes.
       - Raymon Anthony Doane received 11,606 votes at 3.14% of total votes.
@@ -42,7 +42,7 @@ Furthermore, the election results were further analyzed to determine tally resul
       - Jefferson
       - Denver
       - Arapahoe
-2&3. County count results:
+2. County count results:
       - Jefferson County received 38,855 votes with 10.5% of the total votes.
       - Denver County received 306,055 votes with 82.8% of the total votes.
       - Arapahoe County received 24,801 votes with 6.7% of the total votes.
