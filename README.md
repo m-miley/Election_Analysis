@@ -30,11 +30,11 @@ Conclusive results are as follows:
 
 
 ## Challenge Overview
-Furthermore, the following tasks were amended to the original project to determine tally results for county turnout.
+Furthermore, the election results were further analyzed to determine tally results for county turnout.
 
 1. Get a complete list of counties who participated in the election.
 2. Determine the voter turnout for each county.
-3. Calculate the percentage of votes from each county from the total count.
+3. Calculate the percentage of votes for each county from the total count.
 4. Express the county with the highest turnout.
 
 ## Challenge Summary
