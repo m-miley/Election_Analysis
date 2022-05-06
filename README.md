@@ -30,7 +30,7 @@ Conclusive results are as follows:
 
 
 ## Challenge Overview
-Furthermore, the election results were further analyzed to determine tally results for county turnout.
+The election results were further analyzed to determine tally results for county turnout.
 
 1. Get a complete list of counties who participated in the election.
 2. Determine the voter turnout for each county.
